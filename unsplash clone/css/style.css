@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+/* navbar */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: black;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: 1px 1px 15px rgb(32, 32, 32);
+}
+
+nav .logo{
+    letter-spacing: 4px;
+    font-size: 26px;
+}
+
+nav .searchBar input{
+    padding: 7px 12px;
+    width: 250px;
+    margin-right: 5px;
+    font-size: 15px;
+    border-radius: 25px;
+    border: none;
+}
+
+nav .searchBar button{
+    padding: 6px 8px;
+    font-size: 15px;
+    border: none;
+    border-radius: 25px;
+}
+
+nav .searchBar button:hover{
+    cursor: pointer;
+    background-color: #aaa;
+    color: #fff;
+}
+
+/* centerBody */
+.centerBody{
+    min-height: 80vh;
+}
+
+/* banner */
+.banner{
+    height: 80vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.95;
+}
+
+.banner-element{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 142px;
+    margin-top: auto;
+    margin-bottom: auto;
+    left: 0;
+    right: 0;
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    color: #fff;
+}
+
+.banner-element .banner-head{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+}
+
+.banner-element .banner-para{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.banner-element .banner-search input{
+    width: 410px;
+    font-size: 15px;
+    padding: 10px 15px;
+    margin-right: 5px;
+    border: none;
+}
+
+.banner-element .banner-search button{
+    font-size: 15px;
+    padding: 10px 14px;
+    border: none;
+}
+
+.banner-element .banner-search button:hover{
+    cursor: pointer;
+    background-color: #aaa;
+    color: #fff;
+}
+
+.display-area{
+    width: 85%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.display-area .wall-head{
+    font-size: 35px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.display-img{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    /* justify-content: center; */
+}
+
+.img{
+    width: 30%;
+    min-width: 380px;
+    height: 540px;
+    margin: auto;
+    margin-top: 25px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 2px;
+    position: relative;
+}
+
+@media all and (max-width: 768px){
+    .img{
+        width: 100%;
+    }
+}
+
+.img:hover{
+    opacity: 0.8;
+}
+
+.profile{
+    display: flex;
+    width: fit-content;
+    color: #fff;
+    padding: 10px;
+}
+
+.profile img{
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.likes{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.likes .fa{
+    color: rgb(218, 16, 16);
+}
+
+.download{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    display: none;
+}
+
+.download .fa{
+    font-size: 80px;
+    color: rgb(4, 82, 21);
+}
+
+.outerLink:hover + .download{
+    display: block;
+}
+
+.toTop{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+.toTop:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.fas{
+    font-size: 40px;
+    color: #000;
+}
+
+/* footer */
+.footer{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    padding: 15px 0px;
+}

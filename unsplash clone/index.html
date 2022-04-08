@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Montserrat:wght@100;200;300;400;500&family=Open+Sans:wght@300;400&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3f44ded98f.js" crossorigin="anonymous"></script>
+    <title>Walpic</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <span class="logo">WALPIC</span>
+        <span class="searchBar">
+            <input id="searchField" type="text" value="" placeholder="Search photos">
+            <button id="searchBtn">Search</button>
+        </span>
+    </nav>
+
+    <div class="centerBody">
+
+        <!-- banner -->
+
+        <div class="ban"></div>
+
+        <!-- wallpaper display area -->
+
+        <div class="display-area" id="display-area">
+            <p id="searchTopic" class="wall-head"></p>
+            <div class="img-center">
+                <div class="display-img" id="display-img"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- footer -->
+
+    <div class="mis">
+        <button onclick='window.scrollTo({top: 0, behavior: "smooth"});' class="toTop" title="Go to top"><i class='fas fa-caret-square-up'></i></button>
+        <div class="footer">
+            <div class="copyright">
+                Copyrights (2022) reserved by WALPIC
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>
