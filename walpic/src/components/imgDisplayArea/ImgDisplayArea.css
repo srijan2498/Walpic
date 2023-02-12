@@ -1,0 +1,225 @@
+.displayImgContainer {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+}
+
+.imgDisplayArea {
+    width: 90%;
+    max-width: 1200px;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%;
+    padding: 0 12px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.imageItem {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+    cursor: pointer;
+    margin-bottom: 12px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.imageItem img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.searchHeading {
+    text-transform: capitalize;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    padding: 0px 30px 10px 30px;
+    border-bottom: 2px solid #333;
+}
+
+@media (max-width: 991px) {
+    .imgDisplayArea {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (max-width: 480px) {
+    .imgDisplayArea {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        -webkit-column-width: 100%;
+        -moz-column-width: 100%;
+        column-width: 100%;
+    }
+}
+
+.imgUpperSection {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.likes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(182, 182, 182, 0.675);
+    padding: 5px 8px;
+    color: red;
+    border-radius: 5px;
+    cursor: default;
+}
+
+.likeText {
+    color: rgb(34, 34, 34);
+    margin-left: 5px;
+}
+
+.imgLowerSection {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.imgLowerSection .creator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(182, 182, 182, 0.675);
+    padding: 5px 8px;
+    color: rgb(34, 34, 34);
+    border-radius: 5px;
+}
+
+.imgLowerSection .creator:hover {
+    background-color: rgba(182, 182, 182, 0.926);
+}
+
+.imgLowerSection .creatorPic {
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.imgLowerSection .creatorName {
+    margin-left: 5px;
+    text-transform: capitalize;
+}
+
+.imgLowerSection .download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(182, 182, 182, 0.675);
+    padding: 5px 8px;
+    color: rgb(34, 34, 34);
+    border-radius: 5px;
+    font-size: 20px;
+    transition: all 0.5s ease;
+}
+
+.imgLowerSection .download:hover {
+    background-color: rgba(182, 182, 182, 0.926);
+}
+
+.imageItem:hover .imgUpperSection {
+    display: flex;
+}
+
+.imageItem:hover .imgLowerSection {
+    display: flex;
+}
+
+.imageItem:hover .creatorInfo {
+    display: flex;
+}
+
+.creatorInfo {
+    position: absolute;
+    bottom: 65px;
+    left: 10px;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 10px 15px;
+    background-color: rgb(182, 182, 182);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 0px;
+    display: none;
+}
+
+.creatorInfo::after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: rgb(182, 182, 182);
+    position: absolute;
+    bottom: -7px;
+    left: 3.2px;
+    transform: rotate(50deg);
+}
+
+.creatorInfo .profilePic {
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.creatorInfo .creatorName {
+    text-transform: capitalize;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #333;
+    text-align: center;
+}
+
+.creatorInfo .nameNSocial .socialLiks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.creatorInfo .nameNSocial .socialLiks .social {
+    font-size: 16px;
+    padding: 1px 8px;
+    transition: all 0.3s ease;
+}
+
+.creatorInfo .nameNSocial .socialLiks .instagram {
+    font-size: 20px;
+}
+
+.creatorInfo .nameNSocial .socialLiks .portfolio:hover {
+    color: blue;
+}
+
+.creatorInfo .nameNSocial .socialLiks .instagram:hover {
+    color: rgb(187, 11, 11);
+}
+
+.creatorInfo .nameNSocial .socialLiks .twitter:hover {
+    color: rgb(30, 157, 203);
+}
+
