@@ -1,9 +1,10 @@
 import React from 'react'
 
 const Footer = ({dark}) => {
+  const year = new Date().getFullYear()
   return (
     <div className={`footer ${dark?"black":""}`}>
-      © 2023 Walpic. Developed by Srijan Tripathi :)
+      © {year} Walpic. Developed by Srijan :)
     </div>
   )
 }
