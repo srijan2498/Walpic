@@ -1,8 +1,16 @@
-# Walpic
-It is a react js api based web application. It makes use of the unsplash Api to fetch and display images to the users based on their search the users can also download the image of their choice from our web app. This website has a very eye catching UI.
+WalPic
+🚀 WalPic - Bringing stunning, high-quality wallpapers directly to your screen! 🚀
 
-Live link -> https://marvelous-liger-9ad342.netlify.app/
+WalPic is a React-based application that fetches and displays visually captivating images using the Unsplash API. The application was built with a focus on delivering a seamless user experience, complete with live data fetching, a dynamic interface, and an easy-to-navigate layout.
 
-![image](https://user-images.githubusercontent.com/47470062/218301361-4e49f8c0-585f-4b7b-a10e-ac05366a3b9a.png)
+Features
+✨ Dynamic Interface: Enjoy a smooth, responsive design that ensures an engaging browsing experience.
+✨ User-Friendly Layout: Intuitive navigation for quick and easy browsing of image collections.
+✨ Live Data Fetching: New images are loaded on-demand using the Unsplash API, ensuring fresh and high-quality content.
 
-![image](https://user-images.githubusercontent.com/47470062/218301389-462d80ab-7ad8-4398-9f81-d3da6af6a652.png)
+Tech Stack
+React & JSX
+JavaScript & CSS
+Axios for API requests
+React Hooks for state and effect management
+Unsplash API for fetching wallpaper images
