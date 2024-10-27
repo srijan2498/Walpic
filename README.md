@@ -4,6 +4,9 @@
 
 WalPic is a React-based application that fetches and displays visually captivating images using the Unsplash API. The application was built with a focus on delivering a seamless user experience, complete with live data fetching, a dynamic interface, and an easy-to-navigate layout.
 
+🌐 **Live Demo**
+Check out the live version of WalPic here: [WalPic Live ](https://walpic.netlify.app/)
+
 **Features**
 
 ✨ Dynamic Interface: Enjoy a smooth, responsive design that ensures an engaging browsing experience.
