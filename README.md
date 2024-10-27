@@ -13,8 +13,13 @@ WalPic is a React-based application that fetches and displays visually captivati
 ✨ Live Data Fetching: New images are loaded on-demand using the Unsplash API, ensuring fresh and high-quality content.
 
 **Tech Stack**
+
 React & JSX
+
 JavaScript & CSS
+
 Axios for API requests
+
 React Hooks for state and effect management
+
 Unsplash API for fetching wallpaper images
